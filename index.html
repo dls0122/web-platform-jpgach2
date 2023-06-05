@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.0/css/ionicons.min.css" integrity="sha512-JApjWRnfonFeGBY7t4yq8SWr1A6xVYEJgO/UMIYONxaR3C9GETKUg0LharbJncEzJF5Nmiv+Pr5QNulr81LjGQ==" crossorigin="anonymous" />
+</head>
+<body>
+  <header>
+    <i class="icon ion-ios-infinite-outline"></i>
+    <div class="tabs">
+      <div class="tab active" id="home-tab">HOME</div>
+      <div class="tab" id="liked-list-tab">LIKED LIST</div>
+    </div>
+  </header>
+  <select id="movie-category">
+    <option value="popular">Popular</option>
+    <option value="now_playing">Now playing</option>
+    <option value="top_rated">Top rated</option>
+    <option value="upcoming">Upcoming</option>
+  </select>
+  <div id="movie-list"></div>
+  <div id="pagination">
+    <button id="previous-page">Prev</button>
+    <span id="page-info"></span>
+    <button id="next-page">Next</button>
+  </div>
+  <div id="movie-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <img id="movie-modal-poster" src="" alt="">
+      <h2 id="movie-modal-title"></h2>
+      <p id="movie-modal-overview"></p>
+      <div id="movie-modal-genres"></div>
+      <div id="movie-modal-rating"></div>
+      <div id="movie-modal-production-logos"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
